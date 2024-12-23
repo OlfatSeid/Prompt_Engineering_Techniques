@@ -1,3 +1,5 @@
+# Prompt Engineering Techniques
+
 ## Overview
 In this project, i applied In-Context Learning (ICL) techniques, including few-shot, one-shot, and zero-shot prompting,
 to answer multiple-choice questions (MCQs) from the medical MCQ dataset.
