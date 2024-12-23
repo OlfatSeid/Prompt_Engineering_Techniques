@@ -11,7 +11,7 @@ The model attempts to select the correct answer based purely on its pre-trained 
 Example:
 Prompt: "What is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
 Model Output: "(A) Lisinopril"
-
+-----------------------------
 ## One-Shot Prompting
 In one-shot prompting, we provide one example of a question-answer pair from the dataset before asking the model to choose an answer for the next question. 
 This helps the model better understand the task.
