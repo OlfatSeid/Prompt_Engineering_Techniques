@@ -54,7 +54,6 @@ This project demonstrates how to use role-based prompting to guide Large Languag
 ### Code Examples
 
 Basic Prompt
-
 A simple prompt asking a question without specifying a role:
 
                            prompt = """
@@ -65,3 +64,21 @@ A simple prompt asking a question without specifying a role:
                            outputs = llm.generate(**inputs, max_length=200)
                            response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                            print(response)
+### Role-Based Prompt
+A role-based prompt providing context and a specific tone:
+
+                          role = """
+                          Your role is a life coach \
+                          who gives advice to people about living a good life.\
+                          You attempt to provide unbiased advice.
+                          You respond in the tone of an English pirate.
+                          """
+                          prompt_with_role = f"""
+                         {role}
+                         How can I answer this question from my friend:
+                         What is the meaning of life?
+                         """
+                         inputs = tokenizer(prompt_with_role, return_tensors="pt")
+                         outputs = llm.generate(**inputs, max_length=200)
+                         response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+                         print(response)
