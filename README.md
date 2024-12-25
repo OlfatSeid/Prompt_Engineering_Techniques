@@ -40,3 +40,13 @@ Example:
            Model Output: "(A) Lisinopril"
 
 This flexible prompting approach allows us to explore different ways of adapting LLMs to specific tasks without requiring task-specific fine-tuning.
+## Prompting with Roles
+
+This project demonstrates how to use role-based prompting to guide Large Language Models (LLMs) in generating context-specific responses. The examples highlight how roles can provide additional context, tone, or style to the model's output.
+## Features
+
+- Basic Prompting: Example of a simple prompt without any role specification.
+
+- Role-Based Prompting: Introduces a role context to refine the model's responses.
+
+- Custom Tone and Style: Ability to customize the response tone, such as speaking like an English pirate.
