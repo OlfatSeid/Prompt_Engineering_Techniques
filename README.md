@@ -51,3 +51,8 @@ This project demonstrates how to use role-based prompting to guide Large Languag
 - Role-Based Prompting: Introduces a role context to refine the model's responses.
 
 - Custom Tone and Style: Ability to customize the response tone, such as speaking like an English pirate.
+### Code Examples
+
+Basic Prompt
+
+A simple prompt asking a question without specifying a role:
