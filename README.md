@@ -63,6 +63,5 @@ A simple prompt asking a question without specifying a role:
                            """
                            inputs = tokenizer(prompt, return_tensors="pt")
                            outputs = llm.generate(**inputs, max_length=200)
-
-response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-print(response)
+                           response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+                           print(response)
