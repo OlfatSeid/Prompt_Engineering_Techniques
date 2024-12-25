@@ -82,3 +82,11 @@ A role-based prompt providing context and a specific tone:
                          outputs = llm.generate(**inputs, max_length=200)
                          response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                          print(response)
+## Requirements
+- Python >= 3.8
+- Hugging Face Transformers library
+- PyTorch
+Install the dependencies using:
+
+                    pip install transformers torch
+  ---------------------------------------------------------------------------------------------------------
