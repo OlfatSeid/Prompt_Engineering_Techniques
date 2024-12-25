@@ -56,3 +56,13 @@ This project demonstrates how to use role-based prompting to guide Large Languag
 Basic Prompt
 
 A simple prompt asking a question without specifying a role:
+
+                           prompt = """
+                           How can I answer this question from my friend:
+                           What is the meaning of life?
+                           """
+                           inputs = tokenizer(prompt, return_tensors="pt")
+                           outputs = llm.generate(**inputs, max_length=200)
+
+response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+print(response)
