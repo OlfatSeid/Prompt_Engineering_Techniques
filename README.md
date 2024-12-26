@@ -120,3 +120,6 @@ The problem is described as a natural language prompt. It is structured in three
 - Prompt requiring a single answer (yes/no) followed by an explanation.
 
 2. Tokenize the Prompt
+
+                 inputs = tokenizer(prompt, return_tensors="pt")
+   This converts the text prompt into input tensors suitable for the LLM.
