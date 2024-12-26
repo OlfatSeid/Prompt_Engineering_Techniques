@@ -109,7 +109,7 @@ This notebook provides a foundation for exploring chain-of-thought prompting wit
 - Tokenizer: Used to preprocess the prompt.
 - Language Model (LLM): Used to generate responses.
 
-                                 pip install transformers torch
+                             pip install transformers torch
   
 ## Usage Instructions
 
@@ -120,5 +120,7 @@ The problem is described as a natural language prompt. It is structured in three
 - Prompt requiring a single answer (yes/no) followed by an explanation.
 
 2. Tokenize the Prompt
-                 inputs = tokenizer(prompt, return_tensors="pt")
+
+                               inputs = tokenizer(prompt, return_tensors="pt")
    This converts the text prompt into input tensors suitable for the LLM.
+3. Generate Response
