@@ -113,13 +113,13 @@ This notebook provides a foundation for exploring chain-of-thought prompting wit
   
 ## Usage Instructions
 
-1.### Define the Problem Prompt
+1. ### Define the Problem Prompt
 The problem is described as a natural language prompt. It is structured in three variations to test the language model's reasoning ability:
 - Basic prompt.
 - Prompt with explicit instructions to think step by step.
 - Prompt requiring a single answer (yes/no) followed by an explanation.
 
-2.###Tokenize the Prompt
+2. ###Tokenize the Prompt
 
                                inputs = tokenizer(prompt, return_tensors="pt")
    This converts the text prompt into input tensors suitable for the LLM.
@@ -127,7 +127,7 @@ The problem is described as a natural language prompt. It is structured in three
 
                                outputs = llm.generate(**inputs, max_length=512)
  The LLM generates a response based on the tokenized input.
- 4.###Decode and Print Response
+ 4. ###Decode and Print Response
 
                                response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                                print(response)
