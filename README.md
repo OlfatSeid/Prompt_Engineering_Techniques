@@ -111,3 +111,12 @@ This notebook provides a foundation for exploring chain-of-thought prompting wit
 
                                  pip install transformers torch
   
+## Usage Instructions
+
+1. Define the Problem Prompt
+The problem is described as a natural language prompt. It is structured in three variations to test the language model's reasoning ability:
+- Basic prompt.
+- Prompt with explicit instructions to think step by step.
+- Prompt requiring a single answer (yes/no) followed by an explanation.
+
+2. Tokenize the Prompt
