@@ -108,3 +108,6 @@ This notebook provides a foundation for exploring chain-of-thought prompting wit
 ## Requirements
 - Tokenizer: Used to preprocess the prompt.
 - Language Model (LLM): Used to generate responses.
+
+                                 pip install transformers torch
+  
