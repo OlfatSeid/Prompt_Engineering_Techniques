@@ -90,3 +90,15 @@ Install the dependencies using:
 
                     pip install transformers torch
   ---------------------------------------------------------------------------------------------------------
+# Chain-of-Thought Prompting
+This notebook provides a foundation for exploring chain-of-thought prompting with an LLM. Modify the prompts and settings as needed to suit specific tasks or use cases.
+### Structure
+
+1. Prompting Problem Statement
+"15 of us want to go to a restaurant. Two of them have cars, each car can seat 5 people. Two of us have motorcycles, each motorcycle can fit 2 people. Can we all get to the restaurant by car or motorcycle?"
+
+2. Chain-of-Thought Prompt Variants
+
+- Simple problem statement.
+- Problem statement with instructions to think step by step.
+- Problem statement with a request for step-by-step reasoning and final summary answer.
