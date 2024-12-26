@@ -123,7 +123,7 @@ The problem is described as a natural language prompt. It is structured in three
 
                                inputs = tokenizer(prompt, return_tensors="pt")
    This converts the text prompt into input tensors suitable for the LLM.
-3. *Generate Response
+3. * Generate Response
 
                                outputs = llm.generate(**inputs, max_length=512)
    
