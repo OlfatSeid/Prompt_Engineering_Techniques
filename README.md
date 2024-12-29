@@ -142,7 +142,6 @@ The problem is described as a natural language prompt. It is structured in three
 #### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 - Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
 - 0000000000000000000000000000000000000000000
-## Prompting Principles
-- **Principle 1: Write clear and specific instructions**
+
 
 
