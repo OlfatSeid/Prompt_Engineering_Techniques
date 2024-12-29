@@ -133,6 +133,12 @@ The problem is described as a natural language prompt. It is structured in three
                                print(response)
   This decodes the LLM’s response and prints the result.                             
 -----------------------------------
+
+# Guidelines for Prompting
+In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
+
+## Setup
+#### Load the API key and relevant Python libaries.
 ## Prompting Principles
 - **Principle 1: Write clear and specific instructions**
 - **Principle 2: Give the model time to “think”**
