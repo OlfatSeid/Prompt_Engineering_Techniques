@@ -139,7 +139,7 @@ The problem is described as a natural language prompt. It is structured in three
 # Guidelines for Prompting
 In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
-## Prompting Principles
+### Prompting Principles
 - **Principle 1: Write clear and specific instructions**
 - **Principle 2: Give the model time to “think”**
 
@@ -147,7 +147,7 @@ In this lesson, you'll practice two prompting principles and their related tacti
 
 #### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 - Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
-- 0000000000000000000000000000000000000000000
+- 0000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 
 #### Tactic 2: Ask for a structured output
