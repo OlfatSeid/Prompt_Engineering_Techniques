@@ -132,9 +132,10 @@ The problem is described as a natural language prompt. It is structured in three
 
                                response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                                print(response)
-  This decodes the LLM’s response and prints the result.                             
------------------------------------
+                               
+   This decodes the LLM’s response and prints the result.                             
 
+***************************************************************************
 # Guidelines for Prompting
 In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
