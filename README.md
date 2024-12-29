@@ -152,5 +152,6 @@ In this lesson, you'll practice two prompting principles and their related tacti
 - 0000000000000000000000000000000000000000000
 
 
-
+#### Tactic 2: Ask for a structured output
+- JSON, HTML
 
