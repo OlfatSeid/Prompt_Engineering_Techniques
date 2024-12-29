@@ -132,3 +132,4 @@ The problem is described as a natural language prompt. It is structured in three
                                response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                                print(response)
   This decodes the LLM’s response and prints the result.                             
+-----------------------------------
