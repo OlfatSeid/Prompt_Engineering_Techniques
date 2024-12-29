@@ -165,7 +165,4 @@ In this lesson, you'll practice two prompting principles and their related tacti
 ## Setup
 #### Load the API key and relevant Python libaries.
 # Guidelines for Prompting
-In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
-## Setup
-#### Load the API key and relevant Python libaries.
