@@ -135,7 +135,7 @@ The problem is described as a natural language prompt. It is structured in three
                                
    This decodes the LLM’s response and prints the result.                             
 
-***************************************************************************
+****************************************************************************
 # Guidelines for Prompting
 In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
