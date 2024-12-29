@@ -148,5 +148,3 @@ The problem is described as a natural language prompt. It is structured in three
 
 ### Tactics
 
-#### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
-- Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
