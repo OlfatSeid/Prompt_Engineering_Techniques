@@ -67,10 +67,10 @@ A simple prompt asking a question without specifying a role:
                            print(response)
 ### Role-Based Prompt
 A role-based prompt providing context and a specific tone:
-
-                          role = """
-                          Your role is a life coach \
-                          who gives advice to people about living a good life.\
+```python
+     role = """
+     Your role is a life coach \
+     who gives advice to people about living a good life.\
                           You attempt to provide unbiased advice.
                           You respond in the tone of an English pirate.
                           """
@@ -83,6 +83,9 @@ A role-based prompt providing context and a specific tone:
                          outputs = llm.generate(**inputs, max_length=200)
                          response = tokenizer.decode(outputs[0], skip_special_tokens=True)
                          print(response)
+                          
+                       
+```
 ## Requirements
 - Python >= 3.8
 - Hugging Face Transformers library
