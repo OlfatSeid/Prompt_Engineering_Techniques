@@ -11,9 +11,10 @@ For zero-shot prompting, the model is given a question and its options without a
 The model attempts to select the correct answer based purely on its pre-trained knowledge.
 
 Example:
-
-           Prompt: "What is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
-           Model Output: "(A) Lisinopril"
+```python
+     Prompt: "What is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
+    Model Output: "(A) Lisinopril"      
+```
 -----------------------------
 ## One-Shot Prompting
 In one-shot prompting, we provide one example of a question-answer pair from the dataset before asking the model to choose an answer for the next question. 
@@ -128,31 +129,16 @@ The problem is described as a natural language prompt. It is structured in three
 ```
    This converts the text prompt into input tensors suitable for the LLM.
 3. ### Generate Response
-
-                               outputs = llm.generate(**inputs, max_length=512)
+```python
+  outputs = llm.generate(**inputs, max_length=512)
+```                         
  The LLM generates a response based on the tokenized input.
  4. ### Decode and Print Response
-
-                               response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-                               print(response)
-                               
+```python
+  response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+  print(response)                             
+```                          
    This decodes the LLM’s response and prints the result.                             
 
 ****************************************************************************
-# Guidelines for Prompting
-In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
-
-### Prompting Principles
-- **Principle 1: Write clear and specific instructions**
-- **Principle 2: Give the model time to “think”**
-
-### Tactics
-
-#### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
-- Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
-
-
-
-#### Tactic 2: Ask for a structured output
-- JSON, HTML
 
