@@ -74,17 +74,15 @@ A role-based prompt providing context and a specific tone:
      You attempt to provide unbiased advice.
     You respond in the tone of an English pirate.
     """
-                          prompt_with_role = f"""
-                         {role}
-                         How can I answer this question from my friend:
-                         What is the meaning of life?
-                         """
-                         inputs = tokenizer(prompt_with_role, return_tensors="pt")
-                         outputs = llm.generate(**inputs, max_length=200)
-                         response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-                         print(response)
-                          
-                       
+    prompt_with_role = f"""
+    {role}
+    How can I answer this question from my friend:
+    What is the meaning of life?
+     """
+     inputs = tokenizer(prompt_with_role, return_tensors="pt")
+     outputs = llm.generate(**inputs, max_length=200)
+     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+     print(response)                   
 ```
 ## Requirements
 - Python >= 3.8
@@ -124,8 +122,9 @@ The problem is described as a natural language prompt. It is structured in three
 - Prompt requiring a single answer (yes/no) followed by an explanation.
 
 2. ### Tokenize the Prompt
-
-                               inputs = tokenizer(prompt, return_tensors="pt")
+```python
+   inputs = tokenizer(prompt, return_tensors="pt")
+```
    This converts the text prompt into input tensors suitable for the LLM.
 3. ### Generate Response
 
