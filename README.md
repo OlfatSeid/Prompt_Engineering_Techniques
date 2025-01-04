@@ -13,7 +13,7 @@ The model attempts to select the correct answer based purely on its pre-trained 
 Example:
 ```python
      Prompt: "What is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
-    Model Output: "(A) Lisinopril"      
+     Model Output: "(A) Lisinopril"      
 ```
 -----------------------------
 ## One-Shot Prompting
@@ -21,12 +21,12 @@ In one-shot prompting, we provide one example of a question-answer pair from the
 This helps the model better understand the task.
 
 Example:
-
-        Prompt: "Example:\nQuestion: What is the treatment for diabetes?\nAnswer: Insulin\n\nNow answer the following:\nWhat is the 
-        recommended treatment for hypertension?\n(A)
-        Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
-        Model Output: "(A) Lisinopril"
-
+```python
+    Prompt: "Example:\nQuestion: What is the treatment for diabetes?\nAnswer: Insulin\n\nNow answer the following:\nWhat is the 
+    recommended treatment for hypertension?\n(A)
+    Lisinopril\n(B) Amoxicillin\n(C) Acetaminophen"
+    Model Output: "(A) Lisinopril"    
+```
 
 ## Few-Shot Prompting
 Few-shot prompting involves providing multiple question-answer pairs as examples to further guide the model in making the correct selection for a new question.
