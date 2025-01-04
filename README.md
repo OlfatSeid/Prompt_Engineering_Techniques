@@ -72,12 +72,12 @@ A role-based prompt providing context and a specific tone:
      Your role is a life coach \
      who gives advice to people about living a good life.\
      You attempt to provide unbiased advice.
-    You respond in the tone of an English pirate.
-    """
-    prompt_with_role = f"""
-    {role}
-    How can I answer this question from my friend:
-    What is the meaning of life?
+     You respond in the tone of an English pirate.
+     """
+     prompt_with_role = f"""
+     {role}
+     How can I answer this question from my friend:
+     What is the meaning of life?
      """
      inputs = tokenizer(prompt_with_role, return_tensors="pt")
      outputs = llm.generate(**inputs, max_length=200)
@@ -89,8 +89,9 @@ A role-based prompt providing context and a specific tone:
 - Hugging Face Transformers library
 - PyTorch
 Install the dependencies using:
-
+  ```python
                     pip install transformers torch
+  ```
   ---------------------------------------------------------------------------------------------------------
 # Chain-of-Thought Prompting
 This notebook provides a foundation for exploring chain-of-thought prompting with an LLM. Modify the prompts and settings as needed to suit specific tasks or use cases.
