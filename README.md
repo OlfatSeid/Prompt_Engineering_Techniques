@@ -71,9 +71,9 @@ A role-based prompt providing context and a specific tone:
      role = """
      Your role is a life coach \
      who gives advice to people about living a good life.\
-                          You attempt to provide unbiased advice.
-                          You respond in the tone of an English pirate.
-                          """
+     You attempt to provide unbiased advice.
+    You respond in the tone of an English pirate.
+    """
                           prompt_with_role = f"""
                          {role}
                          How can I answer this question from my friend:
