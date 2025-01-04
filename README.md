@@ -33,13 +33,13 @@ Few-shot prompting involves providing multiple question-answer pairs as examples
 This method tends to improve performance over zero-shot and one-shot approaches by offering more context.
 
 Example:
-
-           Prompt: "Examples:\n1. Question: What is the treatment for diabetes?\n Answer: Insulin\n2. Question: What is the treatment for 
-           asthma?\n Answer: 
-           Albuterol\n\nNow answer the following:\nWhat is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) 
-           Amoxicillin\n(C) Acetaminophen"
-           Model Output: "(A) Lisinopril"
-
+```python
+   Prompt: "Examples:\n1. Question: What is the treatment for diabetes?\n Answer: Insulin\n2. Question: What is the treatment for 
+   asthma?\n Answer: 
+   Albuterol\n\nNow answer the following:\nWhat is the recommended treatment for hypertension?\n(A) Lisinopril\n(B) 
+   Amoxicillin\n(C) Acetaminophen"
+   Model Output: "(A) Lisinopril"       
+```
 This flexible prompting approach allows us to explore different ways of adapting LLMs to specific tasks without requiring task-specific fine-tuning.
 
 --------------------------------------------
@@ -92,7 +92,7 @@ A role-based prompt providing context and a specific tone:
 - PyTorch
 Install the dependencies using:
   ```python
-                    pip install transformers torch
+     pip install transformers torch
   ```
   ---------------------------------------------------------------------------------------------------------
 # Chain-of-Thought Prompting
