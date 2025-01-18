@@ -282,4 +282,4 @@ Final Answer: The farmer has 12 chickens and 8 cows.
 - [LangChain Documentation](https://langchain.readthedocs.io/)
 - [Groq LLM API Documentation](https://groq.com/docs)
 
-------------------------
+---------------------
