@@ -142,4 +142,144 @@ The problem is described as a natural language prompt. It is structured in three
    This decodes the LLM’s response and prints the result.                             
 
 ****************************************************************************
+# Solving Riddles using Few-Shot Prompting.
 
+## Overview
+This notebook demonstrates the use of LangChain and the Groq LLM to solve riddles using few-shot prompting. The script utilizes LangChain's `FewShotPromptTemplate` to format examples and queries to the Groq model. It showcases solving riddles by leveraging iterative reasoning steps to arrive at a solution.
+
+---
+
+## Requirements
+- Python 3.8+
+- LangChain
+- LangChain-Groq Integration (`langchain_groq`)
+Install the required Python packages using the following command:
+```bash
+pip install langchain langchain-groq
+```
+
+---
+
+## Notebook Structure
+
+### 1. **Imports**
+The following key modules are imported:
+- `PromptTemplate` and `FewShotPromptTemplate` from `langchain.prompts`
+- `HumanMessage` from `langchain.schema`
+- `ChatGroq` from `langchain_groq`
+
+These modules enable prompt formatting, interaction with the Groq LLM, and structured messaging.
+
+### 2. **Initialize the Groq Model**
+```python
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="Gemma2-9b-It")
+```
+The `ChatGroq` object is initialized with the API key and model name.
+
+### 3. **Define Riddles**
+Three riddles are defined:
+- Riddle 1: A train speed problem.
+- Riddle 2: A farmer's animal count problem.
+- Riddle 3: An age difference problem.
+
+Each riddle is passed as a `HumanMessage` to the model.
+
+### 4. **Few-Shot Examples**
+The notebook defines two solved examples:
+- Example 1: A train speed problem with reasoning steps.
+- Example 2: A farmer's animal count problem with equations and reasoning steps.
+
+These examples include intermediate reasoning steps and final answers, demonstrating the format expected from the LLM.
+
+### 5. **Prompt Template**
+A `FewShotPromptTemplate` is created using the examples, a specific example prompt structure, and a suffix for new input:
+```python
+prompt = FewShotPromptTemplate(
+    examples=examples,
+    example_prompt=example_prompt,
+    suffix="Question: {input}",
+    input_variables=["input"]
+)
+```
+
+### 6. **Query the Model**
+For each riddle, a prompt is formatted using the `FewShotPromptTemplate`, and the query is sent to the Groq LLM:
+```python
+message = HumanMessage(content=prompt.format(input=riddle_1))
+print(llm([message]))
+```
+The responses are printed for each riddle.
+
+---
+
+## Example Outputs
+
+### Riddle 1: Train Speed Problem
+**Question:**
+_A train leaves a station traveling at 60 km/h. One hour later, another train leaves the same station traveling in the same direction at 90 km/h. How long will it take for the second train to catch up to the first train?_
+
+**Answer:**
+```
+We will follow up with some questions to get the answer.
+Follow up: How far ahead is the first train when the second train starts?
+Intermediate answer: In one hour, the first train travels 60 km.
+Follow up: What is the relative speed between the two trains?
+Intermediate answer: 90 km/h - 60 km/h = 30 km/h.
+Follow up: How long will it take for the second train to cover the 60 km gap?
+Intermediate answer: 60 km ÷ 30 km/h = 2 hours.
+Final Answer: It will take 2 hours for the second train to catch up.
+```
+
+### Riddle 2: Farmer's Animals Problem
+**Question:**
+_A farmer has chickens and cows. There are 20 heads and 56 legs in total. How many chickens and cows does the farmer have?_
+
+**Answer:**
+```
+We will follow up with some questions to get the answer.
+Follow up: How many heads are there in total?
+Intermediate answer: 20 heads, each animal has one head.
+Follow up: How many legs does a chicken and a cow have?
+Intermediate answer: A chicken has 2 legs and a cow has 4 legs.
+Follow up: How can we set up equations to solve this?
+Intermediate answer: Let x be the number of chickens and y be the number of cows. We know: x + y = 20 (heads) and 2x + 4y = 56 (legs).
+Follow up: Solve the equations.
+Intermediate answer: From x + y = 20, we get y = 20 - x. Substitute into the second equation: 2x + 4(20 - x) = 56. Simplify: 2x + 80 - 4x = 56 → -2x = -24 → x = 12. So, y = 20 - 12 = 8.
+Final Answer: The farmer has 12 chickens and 8 cows.
+```
+
+---
+
+## Usage Instructions
+1. **Set Up API Key**:
+   Replace `groq_api_key` with your actual API key.
+
+2. **Run the Script**:
+   Execute the script in a Python environment with the necessary dependencies installed.
+
+3. **Modify Riddles**:
+   Add your own riddles by defining them as strings and formatting them into the prompt.
+
+4. **Interpret Results**:
+   The model’s response will be printed in the console for each riddle, including reasoning steps and the final answer.
+
+---
+
+## Customization
+- Add more examples to the `examples` list to improve the model's performance on similar questions.
+- Modify the `PromptTemplate` structure to adjust the reasoning steps or format.
+
+---
+
+## Troubleshooting
+- **Invalid API Key**: Ensure you are using a valid Groq API key.
+- **Dependencies Missing**: Verify that all required libraries are installed.
+- **Incorrect Answers**: Fine-tune examples in the `FewShotPromptTemplate` to guide the model more effectively.
+
+---
+
+#### Acknowledgements
+- [LangChain Documentation](https://langchain.readthedocs.io/)
+- [Groq LLM API Documentation](https://groq.com/docs)
+
+------------------------
