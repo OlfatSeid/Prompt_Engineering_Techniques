@@ -94,7 +94,7 @@ Install the dependencies using:
   ```python
      pip install transformers torch
   ```
-  ---------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------
 # Chain-of-Thought Prompting
 This notebook provides a foundation for exploring chain-of-thought prompting with an LLM. Modify the prompts and settings as needed to suit specific tasks or use cases.
 ### Structure
