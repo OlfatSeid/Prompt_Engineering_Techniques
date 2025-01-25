@@ -284,19 +284,19 @@ Final Answer: The farmer has 12 chickens and 8 cows.
 
 ---------------------
 --------------------------------
-# README: Smartwatch Specifications Description Generator
+# Iterative Prompt Developm
 
 ## Overview
-This script uses the `langchain_groq` library to generate a compelling product description for a smartwatch based on its technical specifications. The script interacts with the Groq API via the `ChatGroq` class and includes iterative refinements to enhance the output. Key features include creating concise, engaging descriptions and incorporating structured data like tables for improved clarity.
+This notebook uses the `langchain_groq` library to generate a compelling product description for a smartwatch based on its technical specifications. The notebook interacts with the Groq API via the `ChatGroq` class and includes iterative refinements to enhance the output. Key features include creating concise, engaging descriptions and incorporating structured data like tables for improved clarity.
 
 ## Features
-1. **Groq API Integration**: The script connects to the Groq API to generate responses using the `llama-3.1-8b-instant` model.
+1. **Groq API Integration**: The notebook connects to the Groq API to generate responses using the `llama-3.1-8b-instant` model.
 2. **Iterative Refinement**: Prompts are progressively refined to:
    - Adjust text length.
    - Emphasize specific features or details.
    - Add structured elements such as tables.
 3. **Dynamic Input**: The technical specifications of the smartwatch are used as input for generating descriptions.
-4. **Customizable Parameters**: Temperature, model, and API key can be configured to adjust response style and behavior.
+
 
 ---
 
@@ -306,9 +306,7 @@ This script uses the `langchain_groq` library to generate a compelling product d
 - Python 3.8+
 - Required libraries:
   - `langchain_groq`
-  - `langchain.schema`
-  - `google.colab`
-
+ 
 ### API Key
 - You need a valid Groq API key stored in the Colab `userdata` or passed directly to the function.
 
@@ -406,11 +404,5 @@ pip install langchain_groq google-colab
 
 ---
 
-## Acknowledgments
-- [LangChain](https://github.com/hwchase17/langchain) for the Groq integration.
-- [Google Colab](https://colab.research.google.com/) for seamless cloud-based execution.
 
----
-
-Feel free to customize and extend this script to suit your specific use case!
 
