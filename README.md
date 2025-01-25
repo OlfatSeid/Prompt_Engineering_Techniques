@@ -284,7 +284,7 @@ Final Answer: The farmer has 12 chickens and 8 cows.
 
 ---------------------
 --------------------------------
-# Iterative Prompt Developm
+# Iterative Prompt Development
 
 ## Overview
 This notebook uses the `langchain_groq` library to generate a compelling product description for a smartwatch based on its technical specifications. The notebook interacts with the Groq API via the `ChatGroq` class and includes iterative refinements to enhance the output. Key features include creating concise, engaging descriptions and incorporating structured data like tables for improved clarity.
@@ -370,7 +370,7 @@ pip install langchain_groq google-colab
 ### Initial Description
 > "A sleek and modern smartwatch with a high-resolution AMOLED display, built-in GPS, and over 20 sports modes. Perfect for fitness enthusiasts and professionals alike."
 
-### Refinement 1: 50 Words
+### Refinement 1: Text Length
 > "This smartwatch combines sleek design with functionality, featuring a high-res AMOLED display, 20+ sports modes, and a 14-day battery life. Its heart rate monitor, GPS, and SpO2 sensor make it ideal for fitness enthusiasts. Water-resistant up to 50 meters, it’s perfect for any lifestyle."
 
 ### Refinement 2: Dimensions Table
